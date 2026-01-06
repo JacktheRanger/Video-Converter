@@ -17,7 +17,6 @@ A powerful batch video converter with GUI that converts your old video files to 
 - **Smart Remux Mode**: Container-only conversion for H.264/H.265 videos (no re-encoding, no quality loss)
 - **Batch Processing**: Convert multiple files concurrently
 - **Auto Detection**: Automatically detects video/audio codecs and recommends optimal settings
-- **Cool Splash Screen**: Animated ASCII art intro with system hardware detection
 - **Bilingual UI**: Full English and Chinese language support
 - **All Streams Support**: Preserves video, audio, and subtitle tracks
 - **Progress Tracking**: Real-time conversion progress with visual progress bars
@@ -128,7 +127,6 @@ GNU GPL v3.0
 - **智能转容器模式**: 对 H.264/H.265 视频仅转换容器（无需重新编码，无质量损失）
 - **批量处理**: 支持多文件并发转换
 - **自动检测**: 自动识别视频/音频编码并推荐最佳设置
-- **炫酷开屏**: ASCII 艺术动画开屏，显示系统硬件信息
 - **双语界面**: 完整的中英文语言支持
 - **保留所有流**: 保留视频、音频和字幕轨道
 - **进度追踪**: 实时显示转换进度条
@@ -225,6 +223,7 @@ GNU GPL v3.0
 ### 👤 作者
 
 **Jack Ji**
+
 
 
 
