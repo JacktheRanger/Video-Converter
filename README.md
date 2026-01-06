@@ -93,6 +93,25 @@ A powerful batch video converter with GUI that converts your old video files to 
 | Deinterlace | y/n | n | Enable yadif deinterlacing filter |
 | Concurrent Files | 1-10 | 3 | Number of files to process simultaneously |
 
+### ❓ FAQ
+
+**Q: Why doesn't this tool support Constant Bitrate (CBR) mode?**
+
+A: This tool uses **Constant Quality (CQ)** mode instead of CBR for several reasons:
+
+| Aspect | Constant Quality (CQ) ✅ | Constant Bitrate (CBR) |
+|--------|--------------------------|------------------------|
+| **Quality Consistency** | Uniform quality throughout | Quality drops in complex scenes |
+| **Efficiency** | Smart bitrate allocation | Wastes bits on simple scenes |
+| **Best For** | Archiving, personal collections | Live streaming, strict bandwidth |
+
+CQ mode lets the encoder automatically allocate bitrate based on scene complexity - using less for static scenes and more for action sequences. This produces better quality at smaller file sizes compared to CBR.
+
+**Q: What CQ value should I use?**
+- **18-21**: Near-lossless quality, larger files
+- **23-25**: High quality (recommended for most users)
+- **28-32**: Good quality, smaller files
+
 ### ⚠️ Notes
 
 - NVENC encoding requires an NVIDIA GPU with hardware encoder support
@@ -199,6 +218,25 @@ GNU GPL v3.0
 | 去隔行 | y/n | n | 启用 yadif 去隔行扫描滤镜 |
 | 并发文件数 | 1-10 | 3 | 同时处理的文件数量 |
 
+### ❓ 常见问题
+
+**Q: 为什么这个工具不支持恒定码率 (CBR) 模式？**
+
+A: 本工具使用**恒定质量 (CQ)** 模式而非 CBR，原因如下：
+
+| 方面 | 恒定质量 (CQ) ✅ | 恒定码率 (CBR) |
+|------|------------------|----------------|
+| **画质一致性** | 全程画质均匀一致 | 复杂场景画质下降 |
+| **编码效率** | 智能分配码率 | 简单场景浪费码率 |
+| **适用场景** | 视频归档、个人收藏 | 直播推流、严格带宽限制 |
+
+CQ 模式让编码器根据画面复杂度自动分配码率 - 静态场景自动降低码率节省空间，动态打斗场景自动提高码率保证质量。相比 CBR，CQ 能以更小的文件体积获得更好的画质。
+
+**Q: CQ 质量参数应该设置多少？**
+- **18-21**: 接近无损画质，文件较大
+- **23-25**: 高画质（推荐大多数用户使用）
+- **28-32**: 良好画质，文件较小
+
 ### ⚠️ 注意事项
 
 - NVENC 编码需要支持硬件编码器的 NVIDIA 显卡
@@ -213,6 +251,7 @@ GNU GPL v3.0
 ### 👤 作者
 
 **Jack Ji**
+
 
 
 
