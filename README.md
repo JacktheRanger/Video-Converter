@@ -30,11 +30,11 @@ A powerful batch video converter with GUI that converts your old video files to 
 | `.mts`, `.m2ts`, `.m2t`, `.ts`, `.m4v` | Container | Remux Recommended (faster, more stable) |
 | `.vob`, `.mpg`, `.avi`, `.wmv`, `.flv`, `.3gp` | Legacy | Transcode + Remux |
 
-### 🔧 System Requirements （Must Read）
+### 🔧 System Requirements (Must Read)
 
 - **OS**: Windows 10/11 (64-bit)
 - **GPU**: NVIDIA GPU with NVENC support (GTX 10 series or newer recommended)
-- **Python**: 3.8+
+- **Python**: 3.8+ (3.12.10 recommended)
 
 ### 🚀 Installation
 
@@ -141,13 +141,11 @@ GNU GPL v3.0
 | `.mts`, `.m2ts`, `.m2t`, `.ts`, `.m4v` | 容器格式 | 建议仅转容器（更快画质更好） |
 | `.vob`, `.mpg`, `.avi`, `.wmv`, `.flv`, `.3gp` | 老旧格式 | 转码+转容器 |
 
-### 🔧 环境要求
-
-#### 系统要求
+### 🔧 环境要求（很重要）
 
 - **操作系统**: Windows 10/11 (64位)
 - **显卡**: 支持 NVENC 的 NVIDIA 显卡（推荐 GTX 10 系列或更新）
-- **Python**: 3.8+
+- **Python**: 3.8+（建议3.12.10）
 
 ### 🚀 安装步骤
 
@@ -227,6 +225,7 @@ GNU GPL v3.0
 ### 👤 作者
 
 **Jack Ji**
+
 
 
 
