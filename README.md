@@ -92,13 +92,6 @@ A powerful batch video converter with GUI that converts your old video files to 
 | Deinterlace | y/n | n | Enable yadif deinterlacing filter |
 | Concurrent Files | 1-10 | 3 | Number of files to process simultaneously |
 
-### 📸 Screenshots
-
-The converter features a cool ASCII art splash screen that displays:
-- Animated "VIDEO CONVERTER" banner
-- System hardware info (CPU, GPU, RAM)
-- NVENC encoder/decoder count
-
 ### ⚠️ Notes
 
 - NVENC encoding requires an NVIDIA GPU with hardware encoder support
@@ -202,13 +195,6 @@ GNU GPL v3.0
 | 去隔行 | y/n | n | 启用 yadif 去隔行扫描滤镜 |
 | 并发文件数 | 1-10 | 3 | 同时处理的文件数量 |
 
-### 📸 界面截图
-
-转换器具有炫酷的 ASCII 艺术开屏动画，显示:
-- 动画 "VIDEO CONVERTER" 横幅
-- 系统硬件信息（CPU、GPU、内存）
-- NVENC 编码器/解码器数量
-
 ### ⚠️ 注意事项
 
 - NVENC 编码需要支持硬件编码器的 NVIDIA 显卡
@@ -223,6 +209,7 @@ GNU GPL v3.0
 ### 👤 作者
 
 **Jack Ji**
+
 
 
 
