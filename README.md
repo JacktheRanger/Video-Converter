@@ -28,7 +28,7 @@ A powerful batch video converter with GUI that converts your old video files to 
 | Format | Type | Recommendation |
 |--------|------|----------------|
 | `.mts`, `.m2ts`, `.m2t`, `.ts`, `.m4v` | Container | Remux Recommended (faster, more stable) |
-| `.vob`, `.mpg`, `.avi`, `.wmv`, `.flv`, `.3gp` | Legacy | Transcode + Remux |
+| `.vob`, `.mpg`, `.mpeg`, `.avi`, `.wmv`, `.flv`, `.f4v`, `.3gp`, `.webm`, `.rmvb`, `.rm` | Legacy | Transcode + Remux |
 
 ### 🔧 System Requirements (Must Read)
 
@@ -197,7 +197,7 @@ GNU GPL v3.0
 | 格式 | 类型 | 建议 |
 |------|------|------|
 | `.mts`, `.m2ts`, `.m2t`, `.ts`, `.m4v` | 容器格式 | 建议仅转容器（更快画质更好） |
-| `.vob`, `.mpg`, `.avi`, `.wmv`, `.flv`, `.3gp` | 老旧格式 | 转码+转容器 |
+| `.vob`, `.mpg`, `.mpeg`, `.avi`, `.wmv`, `.flv`, `.f4v`, `.3gp`, `.webm`, `.rmvb`, `.rm` | 老旧格式 | 转码+转容器 |
 
 ### 🔧 环境要求（很重要）
 
