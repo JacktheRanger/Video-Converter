@@ -18,6 +18,7 @@ A powerful batch video converter with GUI that converts your old video files to 
 - **Universal Format Support**: Convert any video format to H.265 MP4
 - **Hardware Acceleration**: NVIDIA NVENC GPU encoding for blazing fast conversion
 - **CPU Fallback**: Automatic fallback to software encoders (libx265/libx264/libaom-av1) for non-NVIDIA systems
+- **FFmpeg Detection**: Auto-detects FFmpeg installation and provides guided setup if missing
 - **Smart Remux Mode**: Container-only conversion for H.264/H.265 videos (no re-encoding, no quality loss)
 - **Batch Processing**: Convert multiple files concurrently
 - **Auto Detection**: Automatically detects video/audio codecs and recommends optimal settings
@@ -211,6 +212,7 @@ GNU GPL v3.0
 - **通用格式支持**: 将任意视频格式转换为 H.265 MP4
 - **硬件加速**: 支持 NVIDIA NVENC GPU 编码，转换速度极快
 - **CPU 回退**: 无 NVIDIA 显卡时自动切换到 CPU 软件编码器 (libx265/libx264/libaom-av1)
+- **FFmpeg 检测**: 自动检测 FFmpeg 安装状态，未安装时提供引导式安装
 - **智能转容器模式**: 对 H.264/H.265 视频仅转换容器（无需重新编码，无质量损失）
 - **批量处理**: 支持多文件并发转换
 - **自动检测**: 自动识别视频/音频编码并推荐最佳设置
