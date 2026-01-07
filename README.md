@@ -21,6 +21,7 @@ A powerful batch video converter with GUI that converts your old video files to 
 - **All Streams Support**: Preserves video, audio, and subtitle tracks
 - **Progress Tracking**: Real-time conversion progress with visual progress bars
 - **Error Recovery**: Automatically cleans up incomplete files on failure
+- **Advanced Mode**: Multiple output formats (.mp4/.mov/.mkv), encoder selection (HEVC/H.264/AV1), and custom input paths
 
 ### 📋 Supported Formats
 
@@ -191,6 +192,7 @@ GNU GPL v3.0
 - **保留所有流**: 保留视频、音频和字幕轨道
 - **进度追踪**: 实时显示转换进度条
 - **错误恢复**: 失败时自动清理不完整文件
+- **高级模式**: 多种输出格式 (.mp4/.mov/.mkv)、编码器选择 (HEVC/H.264/AV1)、自定义输入路径
 
 ### 📋 支持的格式
 
