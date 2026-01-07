@@ -10,7 +10,9 @@
 
 A powerful batch video converter with GUI that converts your old video files to the most stable and most efficient format with NVENC hardware acceleration support, and bilingual interface (English/Chinese).
 
+<p align="right">
 <img width="1858" height="1828" alt="image" src="https://github.com/user-attachments/assets/37e3c4ac-3c17-4524-9969-2180e5903c8b" />
+</p>
 
 
 
@@ -343,6 +345,7 @@ GNU GPL v3.0
 ### 👤 作者
 
 **Jack Ji**
+
 
 
 
