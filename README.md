@@ -69,11 +69,11 @@ A powerful batch video converter with GUI that converts your old video files to 
 3. Select language (English/Chinese)
 4. Follow the interactive prompts
 
-#### Workflow
+#### Workflow (Basic Mode)
 
 ```
 ┌─────────────────────────────────────────────────────┐
-│  1. Splash Screen → Select Language                 │
+│  1. Splash Screen → Select Language → Select Mode   │
 │  2. Scan → Find all supported video files           │
 │  3. Configure → Choose conversion mode per file     │
 │     • Remux only (fast, no quality loss)            │
@@ -83,6 +83,49 @@ A powerful batch video converter with GUI that converts your old video files to 
 │  6. Summary → Show results and file size comparison │
 └─────────────────────────────────────────────────────┘
 ```
+
+#### Advanced Mode
+
+Advanced Mode provides additional options for power users who need more control over the conversion process.
+
+##### Additional Input Formats
+| Format | Description |
+|--------|-------------|
+| `.mp4`, `.mov`, `.mkv`, `.webm` | Additional formats supported in Advanced Mode |
+
+##### Workflow (Advanced Mode)
+```
+┌─────────────────────────────────────────────────────┐
+│  1. Splash Screen → Select Language → Advanced Mode │
+│  2. Custom Path → Optional: specify input directory │
+│  3. Scan → Find all supported video files           │
+│  4. Output Format → Select: .mp4 / .mov / .mkv      │
+│  5. Encoder → Select: HEVC / H.264 / AV1            │
+│  6. Configure → Smart remux recommendation per file │
+│  7. Settings → NVENC preset, quality, concurrency   │
+│  8. Convert → Batch process with progress display   │
+│  9. Summary → Show results and file size comparison │
+└─────────────────────────────────────────────────────┘
+```
+
+##### Output Format Options
+| Format | Container | Best For |
+|--------|-----------|----------|
+| `.mp4` | MPEG-4 Part 14 | Universal compatibility |
+| `.mov` | QuickTime | Apple devices, Final Cut Pro |
+| `.mkv` | Matroska | Maximum feature support |
+
+##### Encoder Options
+| Encoder | Codec | NVENC Name | Compression | Compatibility |
+|---------|-------|------------|-------------|---------------|
+| HEVC/H.265 | HEVC | hevc_nvenc | Best | Modern devices |
+| AVC/H.264 | AVC | h264_nvenc | Good | Universal |
+| AV1 | AV1 | av1_nvenc | Best | Newest devices (RTX 40+) |
+
+##### Smart Remux Recommendation
+In Advanced Mode, the tool analyzes the source video codec and compares it to your selected target encoder:
+- If the source codec matches the target encoder (e.g., source is H.265 and you selected HEVC), **remux is recommended** (faster, no quality loss)
+- If the source codec differs, **transcoding is recommended**
 
 #### Configuration Options
 
@@ -195,11 +238,11 @@ GNU GPL v3.0
 3. 选择语言（英文/中文）
 4. 按照交互式提示操作
 
-#### 工作流程
+#### 工作流程（基础模式）
 
 ```
 ┌─────────────────────────────────────────────────────┐
-│  1. 开屏动画 → 选择语言                              │
+│  1. 开屏动画 → 选择语言 → 选择模式                   │
 │  2. 扫描 → 查找所有支持的视频文件                     │
 │  3. 配置 → 为每个文件选择转换模式                     │
 │     • 仅转容器（快速，无质量损失）                    │
@@ -209,6 +252,49 @@ GNU GPL v3.0
 │  6. 汇总 → 显示结果和文件大小对比                     │
 └─────────────────────────────────────────────────────┘
 ```
+
+#### 高级模式
+
+高级模式为需要更多控制的高级用户提供额外选项。
+
+##### 额外支持的输入格式
+| 格式 | 说明 |
+|------|------|
+| `.mp4`, `.mov`, `.mkv`, `.webm` | 高级模式额外支持的格式 |
+
+##### 工作流程（高级模式）
+```
+┌─────────────────────────────────────────────────────┐
+│  1. 开屏动画 → 选择语言 → 高级模式                   │
+│  2. 自定义路径 → 可选：指定输入目录                   │
+│  3. 扫描 → 查找所有支持的视频文件                     │
+│  4. 输出格式 → 选择: .mp4 / .mov / .mkv             │
+│  5. 编码器 → 选择: HEVC / H.264 / AV1               │
+│  6. 配置 → 智能转容器推荐                            │
+│  7. 设置 → NVENC 预设、质量、并发数                  │
+│  8. 转换 → 批量处理并显示进度                        │
+│  9. 汇总 → 显示结果和文件大小对比                     │
+└─────────────────────────────────────────────────────┘
+```
+
+##### 输出格式选项
+| 格式 | 容器 | 适用场景 |
+|------|------|----------|
+| `.mp4` | MPEG-4 Part 14 | 通用兼容性最好 |
+| `.mov` | QuickTime | Apple 设备、Final Cut Pro |
+| `.mkv` | Matroska | 功能支持最全面 |
+
+##### 编码器选项
+| 编码器 | 编码标准 | NVENC 名称 | 压缩率 | 兼容性 |
+|--------|----------|------------|--------|--------|
+| HEVC/H.265 | HEVC | hevc_nvenc | 最佳 | 现代设备 |
+| AVC/H.264 | AVC | h264_nvenc | 良好 | 通用 |
+| AV1 | AV1 | av1_nvenc | 最佳 | 最新设备 (RTX 40+) |
+
+##### 智能转容器推荐
+高级模式下，工具会自动分析源视频编码并与目标编码器比较：
+- 如果源编码与目标编码器匹配（例如源是 H.265 且选择了 HEVC），**建议仅转容器**（更快，无质量损失）
+- 如果源编码不同，**建议转码**
 
 #### 配置选项
 
@@ -253,8 +339,7 @@ GNU GPL v3.0
 
 **Jack Ji**
 
-![Downloads](https://img.shields.io/github/downloads/JacktheRanger/Video-Converter/total.svg)
-
+![下载量](https://img.shields.io/github/downloads/JacktheRanger/Video-Converter/total.svg)
 
 
 
