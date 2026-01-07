@@ -17,7 +17,7 @@ A NextGen batch video converter with GUI that delivers Ultrafast performance via
 
 ### ✨ Features
 
-- **Universal Format Support**: Convert any video format to H.265 MP4
+- **Universal Format Support**: Convert any video format to H.265 MP4, while the Advanced Mode unlocks a wider range of professional codecs and containers.
 - **Hardware Acceleration**: NVIDIA NVENC GPU encoding for blazing fast conversion
 - **CPU Fallback**: Automatic fallback to software encoders (libx265/libx264/libaom-av1) for non-NVIDIA systems
 - **FFmpeg Detection**: Auto-detects FFmpeg installation and provides guided setup if missing
@@ -392,6 +392,7 @@ GNU GPL v3.0
 ### 👤 作者
 
 **Jack Ji**
+
 
 
 
