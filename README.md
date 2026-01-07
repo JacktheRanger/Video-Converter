@@ -344,7 +344,8 @@ GNU GPL v3.0
 
 **Jack Ji**
 
-![下载量](https://img.shields.io/github/downloads/JacktheRanger/Video-Converter/total.svg)
+
+
 
 
 
