@@ -1,4 +1,4 @@
-# 🎬 NextGen Universal Video Converter
+# 🎬 NextGen Hyperspeed Video Converter
 
 <img align="right" src="https://img.shields.io/github/downloads/JacktheRanger/Video-Converter/total.svg?label=Downloads" alt="Downloads" />
 
@@ -202,7 +202,7 @@ GNU GPL v3.0
 ---
 
 ## 中文
-# 🎬 次世代通用视频转换工具
+# 🎬 次世代极速视频转换工具
 
 一款具备GUI的次世代批量视频转换工具，通过NVENC硬件加速提供最极致的并发并行处理能力。它将旧视频文件转换为画质最优、最稳定、体积最小的格式，点击即用，无需专业知识。配备全双语界面（中/英）。
 <img width="1694" height="1853" alt="image" src="https://github.com/user-attachments/assets/32c340e1-5e27-444b-a1d5-b29993154cfa" />
@@ -393,6 +393,7 @@ GNU GPL v3.0
 ### 👤 作者
 
 **Jack Ji**
+
 
 
 
