@@ -14,6 +14,7 @@ A powerful batch video converter with GUI that converts your old video files to 
 
 - **Universal Format Support**: Convert any video format to H.265 MP4
 - **Hardware Acceleration**: NVIDIA NVENC GPU encoding for blazing fast conversion
+- **CPU Fallback**: Automatic fallback to software encoders (libx265/libx264/libaom-av1) for non-NVIDIA systems
 - **Smart Remux Mode**: Container-only conversion for H.264/H.265 videos (no re-encoding, no quality loss)
 - **Batch Processing**: Convert multiple files concurrently
 - **Auto Detection**: Automatically detects video/audio codecs and recommends optimal settings
@@ -34,6 +35,7 @@ A powerful batch video converter with GUI that converts your old video files to 
 
 - **OS**: Windows 10/11 (64-bit)
 - **GPU**: NVIDIA GPU with NVENC support (GTX 10 series or newer recommended)
+  - ✅ **No NVIDIA GPU?** The tool automatically falls back to CPU software encoders
 - **Python**: 3.8+ (3.12.10 recommended)
 
 ### 🚀 Installation
@@ -149,9 +151,12 @@ In Advanced Mode, the tool analyzes the source video codec and compares it to yo
 | Option | Range | Default | Description |
 |--------|-------|---------|-------------|
 | NVENC Preset | p1-p7 | p5 | Speed vs quality trade-off (p1=fastest, p7=best quality) |
-| Quality (CQ) | 0-51 | 21 | Lower = higher quality, higher file size |
+| CPU Preset | ultrafast-veryslow | medium | CPU encoder speed/quality options (9 levels) |
+| Quality (CQ/CRF) | 0-51 | 21 | Lower = higher quality, higher file size |
 | Deinterlace | y/n | n | Enable yadif deinterlacing filter |
 | Concurrent Files | 1-10 | 3 | Number of files to process simultaneously |
+
+> **Note**: The tool automatically detects NVENC availability and shows the appropriate preset options.
 
 ### ❓ FAQ
 
@@ -175,7 +180,7 @@ CQ mode lets the encoder automatically allocate bitrate based on scene complexit
 ### ⚠️ Notes
 
 - NVENC encoding requires an NVIDIA GPU with hardware encoder support
-- For non-NVIDIA systems, the script may need modification to use software encoding
+- **For non-NVIDIA systems**: The tool automatically detects and falls back to CPU software encoders (libx265/libx264/libaom-av1)
 - Original files are preserved by default; optional delete-after-conversion is available
 - Remux mode is recommended for files already in H.264/H.265 format
 
@@ -202,6 +207,7 @@ GNU GPL v3.0
 
 - **通用格式支持**: 将任意视频格式转换为 H.265 MP4
 - **硬件加速**: 支持 NVIDIA NVENC GPU 编码，转换速度极快
+- **CPU 回退**: 无 NVIDIA 显卡时自动切换到 CPU 软件编码器 (libx265/libx264/libaom-av1)
 - **智能转容器模式**: 对 H.264/H.265 视频仅转换容器（无需重新编码，无质量损失）
 - **批量处理**: 支持多文件并发转换
 - **自动检测**: 自动识别视频/音频编码并推荐最佳设置
@@ -222,6 +228,7 @@ GNU GPL v3.0
 
 - **操作系统**: Windows 10/11 (64位)
 - **显卡**: 支持 NVENC 的 NVIDIA 显卡（推荐 GTX 10 系列或更新）
+  - ✅ **没有 NVIDIA 显卡？** 工具会自动切换到 CPU 软件编码器
 - **Python**: 3.8+（建议使用3.12.10）
 
 ### 🚀 安装步骤
@@ -337,9 +344,12 @@ GNU GPL v3.0
 | 选项 | 范围 | 默认值 | 说明 |
 |------|------|--------|------|
 | NVENC 预设 | p1-p7 | p5 | 速度与质量权衡（p1=最快, p7=最佳质量） |
-| 质量 (CQ) | 0-51 | 21 | 越小质量越高，文件越大 |
+| CPU 预设 | ultrafast-veryslow | medium | CPU 编码器速度/质量选项（9 个级别） |
+| 质量 (CQ/CRF) | 0-51 | 21 | 越小质量越高，文件越大 |
 | 去隔行 | y/n | n | 启用 yadif 去隔行扫描滤镜 |
 | 并发文件数 | 1-10 | 3 | 同时处理的文件数量 |
+
+> **注意**: 工具会自动检测 NVENC 可用性并显示相应的预设选项。
 
 ### ❓ 常见问题
 
@@ -363,7 +373,7 @@ CQ 模式让编码器根据画面复杂度自动分配码率 - 静态场景自�
 ### ⚠️ 注意事项
 
 - NVENC 编码需要支持硬件编码器的 NVIDIA 显卡
-- 对于非 NVIDIA 系统，可能需要修改脚本以使用软件编码
+- **对于非 NVIDIA 系统**: 工具会自动检测并切换到 CPU 软件编码器 (libx265/libx264/libaom-av1)
 - 默认保留原始文件；可选择转换成功后删除原文件
 - 对于已是 H.264/H.265 格式的文件，建议使用仅转容器模式
 
