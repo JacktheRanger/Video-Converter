@@ -1,9 +1,8 @@
 # 🎬 Universal Video to H.265 MP4 Batch Converter
 
-<table style="width:100%; border:none;"><tr>
-<td style="border:none;"><a href="#english">English</a> | <a href="#中文">中文</a></td>
-<td style="border:none; text-align:right;"><img src="https://img.shields.io/github/downloads/JacktheRanger/Video-Converter/total.svg" alt="Downloads" /></td>
-</tr></table>
+<img align="right" src="https://img.shields.io/github/downloads/JacktheRanger/Video-Converter/total.svg" alt="Downloads" />
+
+[English](#english) | [中文](#中文)
 
 ---
 
