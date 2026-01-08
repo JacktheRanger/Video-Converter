@@ -1,6 +1,6 @@
 # 🎬 NextGen Hyperspeed Video Converter
 
-<img align="right" src="https://img.shields.io/github/downloads/JacktheRanger/Video-Converter/total.svg?label=Downloads" alt="Downloads" />
+<img align="right" src="https://img.shields.io/github/downloads/JacktheRanger/NextGen-Hyperspeed-Video-Converter/total.svg?label=Downloads" alt="Downloads" />
 
 [English](#english) | [中文](#中文)
 
@@ -395,6 +395,7 @@ GNU GPL v3.0
 ### 👤 作者
 
 **Jack Ji**
+
 
 
 
