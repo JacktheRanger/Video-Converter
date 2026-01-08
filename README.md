@@ -10,7 +10,8 @@
 
 NextGen hyperspeed lightweight but powerful batch video converter with a GUI that delivers ultrafast performance via NVENC hardware acceleration. It transforms legacy video files into modern, efficient formats with superior stability and high-concurrency processing, and fully bilingual (English/Chinese).
 
-<img width="1680" height="1901" alt="image" src="https://github.com/user-attachments/assets/6c2c1122-8bb2-4741-a0b5-d0711e4df96b" />
+<img width="1703" height="1837" alt="image" src="https://github.com/user-attachments/assets/97129e92-2138-4ac2-a5cc-435afbfe4587" />
+
 
 
 
@@ -393,6 +394,7 @@ GNU GPL v3.0
 ### 👤 作者
 
 **Jack Ji**
+
 
 
 
