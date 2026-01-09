@@ -63,7 +63,7 @@ NextGen hyperspeed lightweight but powerful batch video converter with a GUI tha
 
 2. **Download the EXE**
    - Go to [Releases](../../releases) page
-   - Download `Vx.x.x.Universal.Video.Converter.exe`
+   - Download `Vx.x.x.NextGen.Hyperspeed.Video.Converter.exe`
    - That's it! No Python required.
 
 #### Option B: Run from Source (For developers)
@@ -75,13 +75,13 @@ NextGen hyperspeed lightweight but powerful batch video converter with a GUI tha
    - No additional pip packages required - uses only built-in modules
 
 3. **Download the script**
-   - Clone or download `Vx.x.x.Universal.Video.Converter.py`
+   - Clone or download `Vx.x.x.NextGen.Hyperspeed.Video.Converter.py`
 
 ### 📖 Usage
 
 #### Using EXE Version
 
-1. Place `Vx.x.x.Universal.Video.Converter.exe` in the folder containing videos (or its parent folder)
+1. Place `Vx.x.x.NextGen.Hyperspeed.Video.Converter.exe` in the folder containing videos (or its parent folder)
 2. Double-click the EXE to run
 3. Select language (English/Chinese)
 4. Follow the interactive prompts
@@ -91,7 +91,7 @@ NextGen hyperspeed lightweight but powerful batch video converter with a GUI tha
 1. Place the `.py` script in the folder containing videos
 2. Double-click the script or run from terminal:
    ```powershell
-   python "Vx.x.x.Universal.Video.Converter.py"
+   python "Vx.x.x.NextGen.Hyperspeed.Video.Converter.py"
    ```
 3. Select language and follow prompts
 
@@ -260,7 +260,7 @@ GNU GPL v3.0
 
 2. **下载 EXE 文件**
    - 前往 [Releases](../../releases) 页面
-   - 下载 `Vx.x.x.Universal.Video.Converter.exe`
+   - 下载 `Vx.x.x.NextGen.Hyperspeed.Video.Converter.exe`
    - 完成！无需安装 Python。
 
 #### 方式 B：运行源代码（适合开发者）
@@ -272,13 +272,13 @@ GNU GPL v3.0
    - 无需安装额外的 pip 包 - 仅使用内置模块
 
 3. **下载脚本**
-   - 克隆或下载 `Vx.x.x.Universal.Video.Converter.py`
+   - 克隆或下载 `Vx.x.x.NextGen.Hyperspeed.Video.Converter.py`
 
 ### 📖 使用方法
 
 #### 使用 EXE 版本
 
-1. 将 `Vx.x.x.Universal.Video.Converter.exe` 放置在包含视频的文件夹中
+1. 将 `Vx.x.x.NextGen.Hyperspeed.Video.Converter.exe` 放置在包含视频的文件夹中
 2. 双击 EXE 运行
 3. 选择语言（中文/英文）
 4. 按照提示操作
@@ -288,7 +288,7 @@ GNU GPL v3.0
 1. 将 `.py` 脚本放置在包含视频的文件夹中
 2. 双击脚本或从终端执行：
    ```powershell
-   python "Vx.x.x.Universal.Video.Converter.py"
+   python "Vx.x.x.NextGen.Hyperspeed.Video.Converter.py"
    ```
 3. 选择语言并按提示操作
 
@@ -395,6 +395,7 @@ GNU GPL v3.0
 ### 👤 作者
 
 **Jack Ji**
+
 
 
 
