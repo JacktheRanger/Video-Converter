@@ -398,7 +398,8 @@ GNU GPL v3.0
 
 ---
 
-[Back to Top](#top)
+<p align="center"><a href="#top">Back to Top</a></p>
+
 
 
 
